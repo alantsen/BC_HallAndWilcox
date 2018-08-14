@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Bitcoin & Blockchain Tech: An Overview</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-markdown
+				section data-background-image="https://f001.backblaze.com/file/Blockchaindeck/Abstractbackground_2.png">
+					##Bitcoin And Blockchain Tech
+					#### An Overview
+				</section>
+				<section data-markdown>
+		          ## A Little About Me
+		          - I'm a recovering tax lawyer (don't hold it against me)
+		          - I'm the chair of FinTech Australia
+		          - I'm the Melbourne GM of Stone & Chalk
+		          - I co-organise the Fintech Melbourne (biggest in AsiaPac) and Blockchain Melbourne (biggest In Australia) meetups
+		          - Been involved in a range of regultory change work - GST, KY/AML and ICOs
+				</section>
+				<section>
+					<h2>Blockchain tech Is Hot at the Moment...</h2>
+				</section>
+				<section>
+				<h4>...Really Hot</h4>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/IMG_8147.JPG" style="width:500px;height:470px;">
+				</section>
+				<section data-markdown>
+					###Most Large Corporates Are Actively Working On Projects...
+					---
+					A recent report from Moody’s notes that there are **over 120** blockchain-related projects currently underway at companies that they rate.
+				</section>
+				<section data-markdown>
+					###...This Has Mainly Been Driven By The Promise Of Cost Savings...
+					---
+					 ####“_...distributed ledger technology could reduce banks’ infrastructure costs attributable to cross-border payments, securities trading and regulatory compliance by between $15-20 billion per annum by 2022._”
+					*Santander InnoVentures, “The Fintech 2.0 Paper: rebooting financial services”*
+				</section>
+				<section>
+					<h3>...And plain old FOMO</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/FOMOEMOJI11.png" style="width:145px;height:127px;">
+				</section>
+				<section data-markdown>
+					## Capital Has Quickly Followed The Hype
+				</section>
+				
+				<section>
+					<h3>Rapidly Accelerating Capital Influx</h3>
+					<img src="https://f001.backblazeb2.com/file/Blockchaindeck/equityfinancing2018.png" style="width:800px;height:450px;">
+				</section>
+				<section>
+					<h3>...Also, ICOs Have Been Huge</h3>
+					<img src="https://f001.backblazeb2.com/file/Blockchaindeck/equityvico2018.png" alt="investment-in-fintech" style="width:800px;height:450px;">
+				</section>
+				<section data-markdown>
+					##Some Perspective
+					- The idea of Bitcoin was conceived in 2008 with the first implementation in 2009.
+					- The shift in focus to blockcahin tech has only occurred over the last 3 years.
+					- Yet, it's already being worked on at most large corporate entities.
+					- That's amazing market penetration in a very short period of time.
+				</section>
+				<section data-markdown data-background-image="https://f001.backblaze.com/file/Blockchaindeck/Abstractbackground_2.png">
+					##So What's A Blockchain?
+				</section>
+				<section data-markdown>
+					##What's In A Name?
+					- The blockchain derives its name from how it's structured. 
+					- A blockchain consists of time-stamped blocks of transactions, linked in chronological order. 
+					- Each transaction record and block is irrevocably* recorded and secured by cryptography.
+				</section>
+				<section data-markdown>
+					##But Language Can Be Confusing
+					- The term 'blockchain' is commonly used in a number of different ways.
+					- Sometimes people use the term to refer to The Bitcoin Blockchain, sometimes other digital currency or tokens and sometimes they are referring to smart contracts.
+					- However, most of the conversation has now shifted to it referring to distributed ledgers - transactions that are replicated across a number of computers. Not on a centrally stored server. 
+				</section>
+				<section data-markdown>
+					##Permissioned vs Permissionless
+					- Most blockchains are either permissioned or permissionless. 
+					- Another way to think about this taxonomy is 'public' vs 'private' networks.
+						* Bitcoin is like the internet and permissioned blockchains are like intranets.
+				</section>
+			<section>
+				<section data-markdown>
+					##Permissionless Blockchain (Bitcoin)
+				</section>
+				<section>
+					<h3>Bitcoin Transaction</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/TransactionParty.png" style="width: 804px;height:528px;">
+				</section>
+				<section>
+					<h3>Broadcast To The Network</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/Broadcast.png" style="width: 804px;height:533px;">
+				</section>
+				<section>
+					<h3> Confirmed Transactions</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/Mining321.png" style="width: 816px;height:528px;">
+				</section>
+				<section>
+					<h3>Blockchain Propagation</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/Blockcahin.png" style="width: 804px;height:528px;">
+				</section>
+				<section>
+					<h3>An Analogy</h3>
+					It's like a book. A book is a 'chain' of pages.
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/books_and_blocks.png" style="width: 500px;height:127px;">
+					<p>Each page is numbered and continues on from the previous one. The same is true of blocks on a blockchain</p>
+				</section>
+				<section>
+					<h3>Finalised Transaction</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/Finalised+Transaction.png" style="width: 804px;height:528px;">
+				</section>
+			</section>	
+			<section>
+				<section data-markdown>
+				##Permissioned Blockchain	
+				</section>
+				<section>
+					<h3>Permissioned</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/Permissioned.png" style="width: 804px;height:528px;">
+				</section>
+				<section>
+					<h3>Current State Of Affairs</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/Swift.png" style="width: 804px;height:528px;">
+				</section>		
+			</section>
+				<section data-markdown>
+					###A Comparison
+
+
+					|        | **Permissionless**           | Permissioned |
+					| ------------- |:-------------:| :-----:|
+					| **Access**| Open read/write access to database | Permissioned read/write access to database |
+					| **Speed**      | Slower      |   faster |
+					| **Security** | Proof of Work/Proof Of Stake      |    Pre-approved participants |
+					| **Identity** | Anonymous/pseudonymous     |    Know Identities |
+					| **Asset** | Native assets (on chain)     |    Any assets |
+
+				</section>
+				<section>
+					<h2>The Landscape</h2>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/PrivatevPublicChains11.png" style="width:600px;height:341px;">
+				</section>
+
+				<section data-markdown data-background-image="https://f001.backblaze.com/file/Blockchaindeck/Abstractbackground_2.png">
+					##So What's The Big Deal?
+				</section>
+				<section data-markdown>
+					##It's The Internet of Value
+					- Just as TCP/IP changed the way information was exchanged, Blockchain tech is change the way value is exchanged.
+					- The first use case was bitcoin.
+					- Now value can be moved without trusted third parties.
+				 </section>
+				 <section data-markdown>
+					##Decentralising Trust
+					- Blockchain tech allows parties who don't have full confidence in each other to collaborate without the need for a centralised authority (aka a trusted third party).
+					- Meaning parties can transact/pass information between each other (peer-to-peer) without a central authority (e.g. SWIFT).
+				 </section>
+				<section data-markdown section data-background-image="https://f001.backblaze.com/file/Blockchaindeck/Abstractbackground_2.png">
+					##which Industries Are Looking At Blockchain Tech?
+				</section>
+				<section>
+					<h2>A better question: who isn't?</h2>
+					<p class="fragment">Here are some examples...</p>
+				</section>
+				<section>
+					<h2>Banking</h2>
+					<p class="fragment">This has been the most active sector - with every bank of note doing some form of experimentation with Blockchain tech</p>
+				</section>
+				<section data-markdown>
+					##Banking Examples
+					- *November 2015*: ConsenSys demonstrated a two party total swap financial contract that used underlying identity, reputation and general ledger components.
+					- *February 2016*: Clearmatics announced it was developing a new clearing platform for OTC derivatives that it called a Decentralised Clearing Network (DCN). Using this a consortium of clearing members could automate contract valuation, margining, trade, compression, and close-out without a centralised clearing counter party or thread party intermediation.
+				</section>
+				<section data-markdown>
+					##Banking Examples (cont.)
+					- *March 2016*: Forty of the world’s biggest banks demonstrated a test system for trading fixed income, using five different blockchain technologies (R3 consortium).
+					<p></p>
+					- **What do all these have in common?** The transactions were done from start to finish on a peer-to-peer basis, _without central intermediaries or clearinghouses in the middle_. This is the promise of blockchain in banking.
+				</section>
+				<section data-markdown>
+					##Health
+					- Looking to connect the health care ecosystem through universal infrastructure. 
+					- Outcome: that shared infrastructure should allow participants to create global standards without compromising privacy and security.
+					- See for example GEM's partnership with Phillips.
+				</section>
+				<section>
+					<h3>GEM Health</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/Gem+health+2" style="width:1158px;height:392px;">
+				</section>
+				<section data-markdown>
+					##Insurance
+					- Allianz has run a PoC using blockchain-based smart contracts to handle catastrophe swaps.
+					- Basically, issued payments under 'cat swaps' and bonds which were triggered under predefined parameters.
+				</section>
+				<section data-markdown data-background-image="https://f001.backblaze.com/file/Blockchaindeck/Abstractbackground_2.png">
+					##What Are The Current Risks/Issues?
+				</section>	
+				<section data-markdown>
+					##Technical Issues
+					- The technology is still in its infancy (see DAO as an example).
+					- Still very few examples of projects in production.
+					- PoCs are being worked on - and need time to gain momentum.
+				</section>	
+				<section data-markdown>
+					##Business Risks
+					- Corporates are still trying to wrap their heads around the technology.
+					- Still very much at a 'blockchain all the things stage'.
+					- Very few companies have the internal capabilities to build blockchain products.
+					- It's a 'bright shiny thing', but may prove a little to early in the adoption curve for corporates.
+				</section>	
+				<section data-markdown>
+					##Regulatory Risks
+					- Clarity has improved in many jurisdictions. 
+					- **But** the issue is that the technology traverses so many different areas of law that it's still hard to understand all the legal ramifications.
+					- However, generally the regulatory environment in Australia is well adapted and allows for a fair amount of experimentation with the technology. 
+				</section>
+				<section data-markdown data-background-image="https://f001.backblaze.com/file/Blockchaindeck/Abstractbackground_2.png">
+					##So What Should Corporates Be Doing?
+				</section>	
+				<section data-markdown>
+					##Internalising Learning Is Key
+					- It's not an outsourcing problem.
+					- Build and experiment internally with small projects. 
+					- Have an internal champion.
+					- Business use cases first, technology second. 
+					- Integration might not be the only play.
+					 * For example, what couldn't be done before? (e.g. what does decentralisation 'buy' you?)
+				</section>
+				<section>
+					<h3>It Takes A Little Work To Get It</h3>
+					<img src="https://f001.backblaze.com/file/Blockchaindeck/DilbertBitcoin.png" style="width:700px;height:222px;">
+				</section>
+				<section data-markdown data-background-image="https://f001.backblaze.com/file/Blockchaindeck/Abstractbackground_2.png">
+					#Thanks
+					###Questions?
+					I can be reached on Twitter (@alantsen) or by email (me@alantsen.com)
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			var items = [
+			{
+				selector : "#chart-frame-0",
+				type : "doughnut",
+				data : [
+					{
+						value: 300,
+						color:"#F7464A",
+						highlight: "#FF5A5E",
+						label: "Red"
+					},
+					{
+						value: 50,
+						color: "#46BFBD",
+						highlight: "#5AD3D1",
+						label: "Green"
+					},
+					{
+						value: 100,
+						color: "#FDB45C",
+						highlight: "#FFC870",
+						label: "Yellow"
+					}
+				],
+				options : {
+					responsive:true
+				}
+			},
+			{
+				selector : "#chart-frame-1",
+				type : "line",
+				data : {
+    			labels: ["Month 1", "Month 2", "Month 3", "Month 4", "Month 5", "Month 6", "Month 7"],
+    			datasets: [
+        		{
+            	label: "Momentum",
+            	fillColor: "rgba(220,220,220,0.2)",
+            	strokeColor: "rgba(220,220,220,1)",
+            	pointColor: "rgba(220,220,220,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(220,220,220,1)",
+            	data: [65, 59, 80, 150, 30, 200, 90]
+        		},
+        
+    			]
+				},
+				options : {
+					responsive:true
+				}
+			},
+			{
+        selector : "#chart-frame-2",
+        type : "bar",
+        data : {
+          labels: ["2010", "2011", "2012", "2013", "2014", "2015"],
+          datasets: [
+            {
+              label: "My First dataset",
+              fillColor: "rgba(220,220,220,0.5)",
+              strokeColor: "rgba(220,220,220,0.8)",
+              highlightFill: "rgba(220,220,220,0.75)",
+              highlightStroke: "rgba(220,220,220,1)",
+              data: [0.19, 0.21, 0.3, 0.4, 12, 16]
+            },
+          ]
+        },
+				options : {
+					responsive : true
+				}
+      },
+			{
+				selector : "#chart-frame-3",
+        type : "radar",
+				data : {
+    			labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+    			datasets: [
+        		{
+            	label: "My First dataset",
+            	fillColor: "rgba(220,220,220,0.2)",
+            	strokeColor: "rgba(220,220,220,1)",
+            	pointColor: "rgba(220,220,220,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(220,220,220,1)",
+            	data: [65, 59, 90, 81, 56, 55, 40]
+        		},
+        		{
+            	label: "My Second dataset",
+            	fillColor: "rgba(151,187,205,0.2)",
+            	strokeColor: "rgba(151,187,205,1)",
+            	pointColor: "rgba(151,187,205,1)",
+            	pointStrokeColor: "#fff",
+            	pointHighlightFill: "#fff",
+            	pointHighlightStroke: "rgba(151,187,205,1)",
+            	data: [28, 48, 40, 19, 96, 27, 100]
+        		}
+    			]
+				},
+				options :{
+					responsive : true,
+					pointLabelFontSize : 15
+				}
+			},
+			{
+        selector : "#chart-frame-4",
+        type : "polararea",
+        data : [
+          {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Red"
+          },
+          {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Yellow"
+          },
+          {
+            value: 40,
+            color: "#949FB1",
+            highlight: "#A8B3C5",
+            label: "Grey"
+          },
+          {
+            value: 120,
+            color: "#4D5360",
+            highlight: "#616774",
+            label: "Dark Grey"
+          }
+        ],
+        options : {
+          responsive : true
+        }
+      },
+      {
+        selector : "#chart-frame-5",
+        type : "pie",
+        data : [
+          {
+            value: 95,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Working On Your Business"
+          },
+          {
+            value: 0,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 5,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Personal"
+          }
+        ],
+				options : {
+					responsive : true
+				}
+      },
+			{
+        selector : "#chart-frame-6",
+        type : "doughnut",
+        data : [
+          {
+            value: 300,
+            color:"#F7464A",
+            highlight: "#FF5A5E",
+            label: "Red"
+          },
+          {
+            value: 50,
+            color: "#46BFBD",
+            highlight: "#5AD3D1",
+            label: "Green"
+          },
+          {
+            value: 100,
+            color: "#FDB45C",
+            highlight: "#FFC870",
+            label: "Yellow"
+          }
+        ],
+				options : {
+					responsive : true
+				}
+      }
+    ];
+			
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				
+				history: true,
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// Display the page number of the current slide
+				slideNumber: true,
+
+				// Enable keyboard shortcuts for navigation
+				keyboard: true,
+
+				// Enable the slide overview mode
+				overview: true,
+
+				// Vertical centering of slides
+				center: true,
+
+				// Transition style
+				transition: 'convex', // none/fade/slide/convex/concave/zoo
+
+				// Parallax background image
+				//parallaxBackgroundImage: 'https://f001.backblaze.com/file/deck-images/CoverimageFinTech.png',
+
+				// Parallax background size
+				//parallaxBackgroundSize: '2000px 900px', // CSS syntax, e.g. "2100px 900px"
+				
+				chart : {
+					items : items
+				},
+
+				menu: {
+    			// Specifies which side of the presentation the menu will 
+       			// be shown. Use 'left' or 'right'.
+        		side: 'left',
+
+       			// Add slide numbers to the titles in the slide list.
+        		// Use 'true' or format string (same as reveal.js slide numbers)
+        		numbers: true,
+
+        		// Specifies which slide elements will be used for generating
+        		// the slide titles in the menu. The default selects the first
+        		// heading element found in the slide, but you can specify any
+        		// valid css selector and the text from the first matching
+        		// element will be used.
+       			// Note: that a section data-menu-title attribute or an element
+        		// with a menu-title class will take precedence over this option
+        		titleSelector: 'h1, h2, h3, h4, h5, h6',
+
+        		// Hide slides from the menu that do not have a title.
+        		// Set to 'true' to only list slides with titles.
+        		hideMissingTitles: false,
+
+        		// Add markers to the slide titles to indicate the 
+        		// progress through the presentation
+        		markers: true,
+
+        		// Specify custom panels to be included in the menu, by
+        		// providing an array of objects with 'title', 'icon'
+        		// properties, and either a 'src' or 'content' property.
+        		custom: false,
+        		//[ { title: 'About', icon: '<i class="fa fa-info">', content: '<p>This slidedeck is created with reveal.js</p>' },
+			    //    ],
+
+        		// Specifies the themes that will be available in the themes
+        		// menu panel. Set to 'false' to hide themes panel.
+        		themes: false, 
+
+        		//[
+          		//	{ name: 'Black', theme: 'css/theme/black.css' },
+            	//	{ name: 'White', theme: 'css/theme/white.css' },
+            	//	{ name: 'League', theme: 'css/theme/league.css' },
+            	//	{ name: 'Sky', theme: 'css/theme/sky.css' },
+            	//	{ name: 'Beige', theme: 'css/theme/beige.css' },
+            	//	{ name: 'Simple', theme: 'css/theme/simple.css' },
+            	//	{ name: 'Serif', theme: 'css/theme/serif.css' },
+            	//	{ name: 'Blood', theme: 'css/theme/blood.css' },
+            	//	{ name: 'Night', theme: 'css/theme/night.css' },
+            	//	{ name: 'Moon', theme: 'css/theme/moon.css' },
+            	//	{ name: 'Solarized', theme: 'css/theme/solarized.css' }
+        		//],
+
+        		// Specifies if the transitions menu panel will be shown.
+        		transitions: false,
+
+        		// Adds a menu button to the slides to open the menu panel.
+        		// Set to 'false' to hide the button.
+        		openButton: true,
+
+        		// If 'true' allows the slide number in the presentation to
+        		// open the menu panel. The reveal.js slideNumber option must 
+        		// be displayed for this to take effect
+        		openSlideNumber: true,
+
+       			// If true allows the user to open and navigate the menu using
+        		// the keyboard. Standard keyboard interaction with reveal
+        		// will be disabled while the menu is open.
+        		keyboard: true
+    			},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/chartjs/Chart.min.js'},
+					{ src: 'plugin/chartjs/charted.js'}, // This is the plugin
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'bower_components/reveal.js-menu/menu.js' },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }	
+				]
+				  
+				});
+			
+		</script>
+
+		<div class="share-reveal" style="display: block; position: absolute; bottom: 25px; left: 51%; margin-left: -139px; z-index: 20;">
+			<a class="share-reveal-editor" href="http://alantsen.com">Presented By Alan Tsen</a>
+
+			<a class="share-reveal-twitter" href="https://twitter.com/alantsen">
+				<svg viewBox="0 0 2000 1625.36" width="20" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<path d="m 1999.9999,192.4 c -73.58,32.64 -152.67,54.69 -235.66,64.61 84.7,-50.78 149.77,-131.19 180.41,-227.01 -79.29,47.03 -167.1,81.17 -260.57,99.57 C 1609.3399,49.82 1502.6999,0 1384.6799,0 c -226.6,0 -410.328,183.71 -410.328,410.31 0,32.16 3.628,63.48 10.625,93.51 -341.016,-17.11 -643.368,-180.47 -845.739,-428.72 -35.324,60.6 -55.5583,131.09 -55.5583,206.29 0,142.36 72.4373,267.95 182.5433,341.53 -67.262,-2.13 -130.535,-20.59 -185.8519,-51.32 -0.039,1.71 -0.039,3.42 -0.039,5.16 0,198.803 141.441,364.635 329.145,402.342 -34.426,9.375 -70.676,14.395 -108.098,14.395 -26.441,0 -52.145,-2.578 -77.203,-7.364 52.215,163.008 203.75,281.649 383.304,284.946 -140.429,110.062 -317.351,175.66 -509.5972,175.66 -33.1211,0 -65.7851,-1.949 -97.8828,-5.738 181.586,116.4176 397.27,184.359 628.988,184.359 754.732,0 1167.462,-625.238 1167.462,-1167.47 0,-17.79 -0.41,-35.48 -1.2,-53.08 80.1799,-57.86 149.7399,-130.12 204.7499,-212.41" style="fill:#ffffff"></path>
+				</svg>
+			</a>
+		</div>
+		<style>
+			
+			/* Social sharing */
+			.share-reveal a {
+				display: inline-block;
+				height: 34px;
+				line-height: 32px;
+				padding: 0 10px;
+				color: #fff;
+				font-family: Helvetica, sans-serif;
+				text-decoration: none;
+				font-weight: bold;
+				font-size: 12px;
+				vertical-align: top;
+				text-transform: uppercase;
+				box-sizing: border-box;
+			}
+
+			.share-reveal .share-reveal-editor {
+				line-height: 30px;
+			}
+
+			.share-reveal svg {
+				vertical-align: middle;
+			}
+
+			.share-reveal a + a {
+				margin-left: 10px;
+			}
+
+			.share-reveal-editor {
+				border: 2px solid #fff;
+			}
+
+			.share-reveal-twitter,
+			.share-reveal-follow {
+				background-color: #00aced;
+			}
+
+			.share-reveal-facebook {
+				background-color: #4B71B8;
+			}
+
+		</style>
+
+	</body>
+</html>
